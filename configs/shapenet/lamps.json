@@ -1,0 +1,27 @@
+{
+    "dataset_root": "./data/shapenetlamps/lamps/03636649",
+    "splits_path": "./data/shapenetlamps/lamp_splits.json",
+
+    "max_freq": 8,
+    "num_freqs": 20,
+    "hidden_layers": 5,
+    "hidden_features": 256,
+
+    "train_views": 25,
+    "meta_epochs": 45,
+    "meta_lr": 5e-5,
+    "train_batchsize": 128,
+    "num_samples": 128,
+    "inner_lr": 0.5,
+    "inner_steps": 32,
+
+    "tto_views": 1,
+    "tto_lr": 0.5,
+    "tto_batchsize": 64,
+    "tto_steps": 2000,
+
+    "test_views": 25,
+    "test_batchsize": 4096,
+    "radius": 4.0,
+    "savedir": "./videos"
+}

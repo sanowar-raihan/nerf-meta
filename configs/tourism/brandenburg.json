@@ -1,0 +1,24 @@
+{
+    "image_folder": "./data/brandenburg/images",
+    "c2w_path": "./data/brandenburg/c2w_mats.npy",
+    "kinv_path": "./data/brandenburg/kinv_mats.npy",
+    "bound_path": "./data/brandenburg/bds.npy",
+
+    "max_freq": 8,
+    "num_freqs": 20,
+    "hidden_layers": 5,
+    "hidden_features": 256,
+
+    "meta_epochs": 110,
+    "meta_lr": 5e-4,
+    "train_batchsize": 64,
+    "num_samples": 128,
+    "inner_lr": 1.0,
+    "inner_steps": 64,
+    
+    "tto_batchsize": 64,
+    "tto_lr": 1.0,
+    "tto_steps": 256,
+    "test_batchsize": 4096,
+    "interpolate": [1, 5, 14, 6, 8, 10, 1]
+}
