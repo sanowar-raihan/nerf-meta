@@ -72,7 +72,7 @@ class SimpleNeRF(nn.Module):
         """
         out = self.net(x)
         rgb = torch.sigmoid(out[..., :-1])
-        sigma = F.relu(out[..., -1])
+        sigma = F.softplus(out[..., -1])
         return rgb, sigma
 
 
